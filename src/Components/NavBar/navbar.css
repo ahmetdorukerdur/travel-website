@@ -1,1 +1,102 @@
-/*# sourceMappingURL=navbar.css.map */
+:root {
+  --PrimaryColor: #F67009;
+  --HoverColor: #CB5E0B;
+  --whiteColor: #FFFFFF;
+  --blackColor: #2E2E2E;
+  --textColor: #79797C;
+  --whiteColorDeam: #EDEDED;
+  --greyBg: #F5F5F5;
+  --greyText: rgb(190, 190, 190);
+  --inputColor: #F8F6F7;
+}
+
+.navBarSection .header {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  background: transparent;
+}
+.navBarSection .header .logoDiv .logo {
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.navBarSection .header .logoDiv .logo .icon {
+  color: var(--PrimaryColor);
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .navBarSection .header .navBar {
+    position: absolute;
+    top: 0;
+    left: -500%;
+    z-index: 1000;
+    padding: 1rem;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    background: var(--greyBg);
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.984);
+    transition: 0.5s ease;
+  }
+  .navBarSection .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  .navBarSection .header .navBar .navLists .navItem {
+    padding: 1rem 0;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--textColor);
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns {
+    flex-direction: column;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn {
+    margin-top: 1rem;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a {
+    font-weight: 600;
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .btn a:hover {
+    color: var(--whiteColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn {
+    background: none;
+    border: 1px solid var(--PrimaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn a {
+    color: var(--PrimaryColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn:hover {
+    background: var(--HoverColor);
+  }
+  .navBarSection .header .navBar .navLists .headerBtns .loginBtn:hover a {
+    color: var(--whiteColor);
+  }
+  .navBarSection .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .navBarSection .header .navBar .closeNavbar:hover .icon {
+    color: var(--HoverColor);
+  }
+  .navBarSection .header .activeNavbar {
+    left: 0;
+  }
+}/*# sourceMappingURL=navbar.css.map */

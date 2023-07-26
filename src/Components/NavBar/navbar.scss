@@ -1,0 +1,119 @@
+:root{
+  --PrimaryColor: #F67009;
+  --HoverColor: #CB5E0B;
+  --whiteColor: #FFFFFF;
+  --blackColor: #2E2E2E;
+  --textColor: #79797C;
+  --whiteColorDeam: #EDEDED;
+  --greyBg: #F5F5F5;
+  --greyText: rgb(190, 190, 190);
+  --inputColor: #F8F6F7;
+}
+
+.navBarSection{
+  .header{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    background: transparent;
+
+    .logoDiv{
+      .logo{
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        color: var(--whiteColor);
+        cursor: pointer;
+
+        .icon{
+          color: var(--PrimaryColor);
+          font-size: 25px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      .navBar{
+        position: absolute;
+        top: 0;
+        left: -500%;
+        z-index: 1000;
+        padding: 1rem;
+        width: 100%;
+        height: max-content;
+        background: var(--greyBg);
+        box-shadow: 0 2px 4px rgba(209, 209, 209, 0.984);
+        transition: .5s ease;
+
+        .navLists{
+          flex-direction: column;
+          justify-content: center;
+          margin: auto;
+          width: 100%;
+
+          .navItem{
+            padding: 1rem 0;
+
+            .navLink{
+              font-size: .9rem;
+              font-weight: 600;
+              color: var(--textColor);
+              &:hover{
+                color: var(--PrimaryColor);
+              }
+            }
+          }
+
+          .headerBtns{
+            flex-direction: column;
+
+            .btn{
+              margin-top: 1rem;
+
+              a{
+                font-weight: 600;
+
+                &:hover{
+                  color: var(--whiteColor)
+                }
+              }
+            }
+
+            .loginBtn{
+              background: none;
+              border: 1px solid var(--PrimaryColor);
+              
+              a{
+                color: var(--PrimaryColor);
+              }
+              &:hover{
+                background: var(--HoverColor);
+                a{
+                  color: var(--whiteColor);
+                }
+              }
+            }
+          }
+        }
+
+        .closeNavbar{
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+          color: var(--PrimaryColor);
+          &:hover .icon{
+            color: var(--HoverColor);
+          }
+        }
+      }
+
+      .activeNavbar{
+        left: 0;
+      }
+    }
+  }
+}
