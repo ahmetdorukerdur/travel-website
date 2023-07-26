@@ -37,6 +37,11 @@ li{
   padding-right: 1.5rem;
 }
 
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .flex{
   display: flex;
   align-items: center;
