@@ -1,6 +1,6 @@
 :root {
-  --PrimaryColor: #F67009;
-  --HoverColor: #CB5E0B;
+  --PrimaryColor: rgba(112, 220, 166);
+  --HoverColor: rgba(46, 56, 49);
   --whiteColor: #FFFFFF;
   --blackColor: #2E2E2E;
   --textColor: #79797C;
@@ -28,8 +28,9 @@
   cursor: pointer;
 }
 .navBarSection .header .logoDiv .logo .icon {
+  vertical-align: -10%;
   color: var(--PrimaryColor);
-  font-size: 25px;
+  font-size: 30px;
 }
 @media screen and (max-width: 768px) {
   .navBarSection .header .navBar {
@@ -99,4 +100,11 @@
   .navBarSection .header .activeNavbar {
     left: 0;
   }
+}
+.navBarSection .header .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--whiteColor);
+}
+.navBarSection .header .toggleNavbar .icon:hover {
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=navbar.css.map */

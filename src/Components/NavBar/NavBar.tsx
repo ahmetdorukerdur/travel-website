@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import {SiYourtraveldottv} from 'react-icons/si';
+import {GiPlanePilot} from 'react-icons/gi';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';
 
@@ -19,8 +19,8 @@ const NavBar = () => {
       <div className='header'>
         <div className='logoDiv'>
           <a href='#' className='logo'>
-            <h1><SiYourtraveldottv className='icon'/>
-            Dot
+            <h1><GiPlanePilot className='icon'/>
+            Adertur
             </h1>
           </a>
         </div>
