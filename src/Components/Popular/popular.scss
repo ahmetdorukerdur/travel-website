@@ -1,0 +1,168 @@
+:root{
+  --PrimaryColor: rgba(112, 220, 166);
+  --HoverColor: rgba(46, 56, 49);
+  --whiteColor: #FFFFFF;
+  --blackColor: #2E2E2E;
+  --textColor: #79797C;
+  --whiteColorDeam: #EDEDED;
+  --greyBg: #F5F5F5;
+  --greyText: rgb(190, 190, 190);
+  --inputColor: #F8F6F7;
+}
+
+.popular{
+  padding-top: 15rem;
+
+  .secContainer{
+    .secHeader{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+
+      .textDiv{
+        .secTitle{
+          padding-bottom: .5rem;
+          line-height: 1.5rem;
+          color: var(--blackColor);
+        }
+
+        p{
+          font-size: 13px;
+          font-weight: 500;
+          color: var(--textColor);
+        }
+      }
+
+      .iconsDiv{
+        gap: 1rem;
+
+        .icon{
+          padding: .5rem;
+          background: var(--greyText);
+          border-radius: 50%;
+          font-size: 2.5rem;
+          &:hover{
+            background: var(--blackColor);
+            color: var(--whiteColor);
+          }
+        }
+
+        .leftIcon{
+          background: var(--blackColor);
+          color: var(--whiteColor);
+          &:hover{
+            background: var(--greyText);
+            color: var(--blackColor);
+          }
+        }
+      }
+    }
+
+    .mainContent{
+      padding: 2rem 0;
+      gap: 1rem;
+
+      .singleDestination{
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 2px 7px 2px rgba(137, 133, 133, 0.288);
+
+        .destImage{
+          overflow: hidden;
+          position: relative;
+          height: 200px;
+          width: 100%;
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+
+          .overlayInfo{
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.434));
+
+            h3{
+              font-weight: 600;
+              color: var(--whiteColor);
+            }
+            p{
+              font-size: 13px;
+              opacity: .7;
+              color: var(--whiteColor);
+            }
+            .icon{
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+              padding: .5rem;
+              border: 1px solid transparent;
+              border-radius: 50%;
+              background: var(--PrimaryColor);
+              font-size: 2.5rem;
+              color: var(--whiteColor);
+              transition: .3s ease;
+
+              &:hover{
+                background: var(--blackColor);
+                border: 1px solid var(--PrimaryColor);
+                color: var(--PrimaryColor);
+              }
+            }
+          }
+        }
+
+        .destFooter{
+          padding: 1rem;
+
+          .number{
+            position: relative;
+            width: max-content;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--blackColor);
+            &::after{
+              content: '';
+              position: absolute;
+              top: 45%;
+              right: -150%;
+              width: 45px;
+              height: 5px;
+              border-radius: 1rem;
+              background: var(--PrimaryColor);
+            }
+          }
+
+          .destText{
+            justify-content: space-between;
+
+            h6{
+              font-size: 15px;
+              color: var(--blackColor);
+            }
+
+            .flex{
+              transform: translateY(5px);
+              align-items: flex-start;
+              font-size: 16px;
+              font-weight: 600;
+
+              .dotIcon{
+                color: var(--PrimaryColor);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
