@@ -1,15 +1,3 @@
-:root {
-  --PrimaryColor: rgba(112, 220, 166);
-  --HoverColor: rgba(46, 56, 49);
-  --whiteColor: #FFFFFF;
-  --blackColor: #2E2E2E;
-  --textColor: #79797C;
-  --whiteColorDeam: #EDEDED;
-  --greyBg: #F5F5F5;
-  --greyText: rgb(190, 190, 190);
-  --inputColor: #F8F6F7;
-}
-
 .home {
   position: relative;
   display: flex;

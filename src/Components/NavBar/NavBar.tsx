@@ -6,6 +6,8 @@ import {TbGridDots} from 'react-icons/tb';
 
 const NavBar = () => {
   const [active, setActive] = useState('navBar');
+  const [transparent, setTransparent] = useState('header');
+
   const showNav = () => {
     setActive('navBar activeNavbar');
   };
@@ -14,9 +16,19 @@ const NavBar = () => {
     setActive('navBar');
   };
 
+  const addBackground = () => {
+    if(window.scrollY >= 10){
+      setTransparent('header activeHeader')
+    }
+    else{
+      setTransparent('header')
+    }
+  };
+  window.addEventListener('scroll', addBackground);
+
   return (
     <section className='navBarSection'>
-      <div className='header'>
+      <div className={transparent}>
         <div className='logoDiv'>
           <a href='#' className='logo'>
             <h1><GiPlanePilot className='icon'/>
