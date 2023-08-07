@@ -5,6 +5,41 @@ import {TiArrowRightOutline} from 'react-icons/ti';
 import {GoDotFill} from 'react-icons/go';
 
 import ParisImg from '../../Images/paris.jpg';
+import MaldivesImg from '../../Images/maldives.jpeg';
+import IstanbulImg from '../../Images/istanbul.jpeg';
+import CairoImg from '../../Images/cairo.jpeg';
+import { count } from 'console';
+
+const Data = [
+  {
+    id: 1,
+    img: ParisImg,
+    title: 'Paris',
+    country: 'France',
+    grade: '',
+  },
+  {
+    id: 2,
+    img: MaldivesImg,
+    title: 'Banana Reef',
+    country: 'Maldives',
+    grade: '',
+  },
+  {
+    id: 3,
+    img: IstanbulImg,
+    title: 'Istanbul',
+    country: 'Turkiye',
+    grade:'',
+  },
+  {
+    id: 4,
+    img: CairoImg,
+    title: 'Cairo',
+    country: 'Egypt',
+    grade: '',
+  }
+]
 
 const Popular = () => {
   return (
@@ -29,32 +64,38 @@ const Popular = () => {
         </div>
 
         <div className='mainContent grid'>
-          <div className='singleDestination'>
-            <div className='destImage'>
-              <img src={ParisImg} alt='Image title' />
+          {
+            Data.map(({id, img, title, country, grade}) => {
+              return(
+                <div className='singleDestination'>
+                  <div className='destImage'>
+                    <img src={img} alt='Image title' />
 
-              <div className='overlayInfo'>
-                <h3>Text</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <TiArrowRightOutline className='icon' />
-              </div>
-            </div>
+                    <div className='overlayInfo'>
+                      <h3>{title}</h3>
+                      <p>{country}</p>
+                      <TiArrowRightOutline className='icon' />
+                    </div>
+                  </div>
 
-            <div className='destFooter'>
-              <div className='number'>
-                01
-              </div>
-              <div className='destText flex'>
-                <h6>Paris</h6>
-                <span className='flex'>
-                  <span className='dot'>
-                    <GoDotFill className='dotIcon' />
-                  </span>
-                  Dot
-                </span>
-              </div>
-            </div>
-          </div>
+                  <div className='destFooter'>
+                    <div className='number'>
+                      0{id}
+                    </div>
+                    <div className='destText flex'>
+                      <h6>{country}</h6>
+                      <span className='flex'>
+                        <span className='dot'>
+                          <GoDotFill className='dotIcon' />
+                        </span>
+                        Adertur
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
 
       </div>
