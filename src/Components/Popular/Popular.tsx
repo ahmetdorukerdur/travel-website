@@ -1,5 +1,6 @@
 import React from 'react';
 import './popular.css';
+
 import {TiArrowLeftOutline} from 'react-icons/ti';
 import {TiArrowRightOutline} from 'react-icons/ti';
 import {GoDotFill} from 'react-icons/go';
@@ -8,7 +9,6 @@ import ParisImg from '../../Images/paris.jpg';
 import MaldivesImg from '../../Images/maldives.jpeg';
 import IstanbulImg from '../../Images/istanbul.jpeg';
 import CairoImg from '../../Images/cairo.jpeg';
-import { count } from 'console';
 
 const Data = [
   {
