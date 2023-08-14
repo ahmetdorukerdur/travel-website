@@ -38,6 +38,61 @@
             font-weight: 500;
           }
         }
+
+        .offerBody{
+          padding: 1rem;
+
+          .price{
+            justify-content: space-between;
+
+            h4{
+              color: var(--blackColor);
+              font-weight: 700;
+              font-size: 1.1rem;
+            }
+
+            .status{
+              padding: 5px 10px;
+              background: var(--greyBg);
+              color: var(--RentColor);
+              border-radius: 3rem;
+              font-weight: 600;
+              font-size: 10px;
+            }
+          }
+
+          .facilities{
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            width: 100%;
+            gap: .5rem;
+
+            .singelFacilities{
+              padding: 5px 10px;
+              gap: .1rem;
+              background: var(--greyBg);
+            }
+          }
+
+          .btn{
+            justify-content: space-between;
+            text-align: center;
+            padding: .6rem;
+            margin-top: 1rem;
+            width: 100%;
+            color: var(--whiteColor);
+            font-weight: 600;
+
+            .icon{
+              color: var(--whiteColor);
+            }
+          }
+        }
+
+        &:hover{
+          transform: translateY(-10px);
+        }
       }
     }
   }

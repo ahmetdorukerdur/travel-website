@@ -16,28 +16,24 @@ const Data = [
     img: ParisImg,
     title: 'Paris',
     country: 'France',
-    grade: '',
   },
   {
     id: 2,
     img: MaldivesImg,
     title: 'Banana Reef',
     country: 'Maldives',
-    grade: '',
   },
   {
     id: 3,
     img: IstanbulImg,
     title: 'Istanbul',
     country: 'Turkiye',
-    grade:'',
   },
   {
     id: 4,
     img: CairoImg,
     title: 'Cairo',
     country: 'Egypt',
-    grade: '',
   }
 ]
 
@@ -65,7 +61,7 @@ const Popular = () => {
 
         <div className='mainContent grid'>
           {
-            Data.map(({id, img, title, country, grade}) => {
+            Data.map(({id, img, title, country}) => {
               return(
                 <div className='singleDestination'>
                   <div className='destImage'>
