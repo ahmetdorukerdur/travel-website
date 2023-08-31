@@ -13,13 +13,14 @@
   --HoverColor: rgba(46, 56, 49);
   --RentColor: rgb(74, 102, 83);
   --whiteColor: #FFFFFF;
-  --blackColor: #2E2E2E;
+  --blackColor: ##1C1C1C;
   --textColor: #79797C;
   --whiteColorDeam: #EDEDED;
   --greyBg: #F5F5F5;
   --greyText: rgb(190, 190, 190);
   --inputColor: #F8F6F7;
   --transparentColor: #3E3E3C;
+  --backgroundColor: rgba(213, 245, 229);
 }
 
 a{
@@ -56,16 +57,16 @@ li{
 
 .btn{
   padding: .4rem 1.5rem;
-  background: var(--PrimaryColor);
   border: none;
   outline: none;
   border-radius: 3rem;
+  background: var(--PrimaryColor);
   cursor: pointer;
 }
 
 .btn a{
-  color: var(--whiteColor);
   font-weight: 500;
+  color: var(--whiteColor);
 }
 
 .btn:hover{
@@ -73,21 +74,21 @@ li{
 }
 
 .secIntro{
-  max-width: 70%;
   text-align: center;
   margin: 0 auto 2rem;
+  max-width: 70%;
 }
 
 .secIntro .secTitle{
-  color: var(--blackColor);
-  line-height: 1.5rem;
   padding-bottom: .5rem;
+  line-height: 1.5rem;
+  color: var(--blackColor);
 }
 
 .secIntro p{
   font-size: 13px;
-  color: var(--textColor);
   font-weight: 500;
+  color: var(--textColor);
 }
 
 img, video{

@@ -1,0 +1,40 @@
+.about{
+  .secContainer{
+    text-align: center;
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--blackColor);
+  }
+
+  .mainContent{
+    gap: 1rem;
+    
+    .singleItem{
+      text-align: center;
+
+      img{
+        padding: 1.2rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: var(--backgroundColor);
+      }
+
+      h3{
+        padding: .5rem;
+        font-weight: 700;
+        color: var(--blackColor);
+      }
+
+      p{
+        padding-bottom: .5rem;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--textColor);
+      }
+    }
+  }
+  
+}

@@ -1,1 +1,33 @@
-/*# sourceMappingURL=about.css.map */
+.about .secContainer {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: var(--blackColor);
+}
+.about .mainContent {
+  gap: 1rem;
+}
+.about .mainContent .singleItem {
+  text-align: center;
+}
+.about .mainContent .singleItem img {
+  padding: 1.2rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: var(--backgroundColor);
+}
+.about .mainContent .singleItem h3 {
+  padding: 0.5rem;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+.about .mainContent .singleItem p {
+  padding-bottom: 0.5rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--textColor);
+}/*# sourceMappingURL=about.css.map */
