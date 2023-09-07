@@ -4,6 +4,7 @@ import './about.css';
 import DestinationImg from '../../Images/destination.avif';
 import HotelImg from '../../Images/hotel.avif';
 import CustomerImg from '../../Images/customer.avif';
+import SunsetVideo from '../../Images/SunsetVideo.mp4';
 
 const About = () => {
   return (
@@ -42,6 +43,21 @@ const About = () => {
             </p>
           </div>
         </div>
+
+        <div className='videoCard container'>
+          <div className='cardContent grid'>
+            <div className='cardText'>
+              <h2>Holiday experience beyond the world with Adertur!</h2>
+              <p>Have unforgettable experiences with your family or friends in the most beautiful places in the world.</p>
+            </div>
+            
+            <div className='cardVideo'>
+              <video src={SunsetVideo} autoPlay loop muted></video>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );
