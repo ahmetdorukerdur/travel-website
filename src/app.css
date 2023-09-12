@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:&display=swap');
 
 *{
   margin: 0;
@@ -13,7 +13,7 @@
   --HoverColor: rgba(46, 56, 49);
   --RentColor: rgb(74, 102, 83);
   --whiteColor: #FFFFFF;
-  --blackColor: ##1C1C1C;
+  --blackColor: #1C1C1C;
   --textColor: #79797C;
   --whiteColorDeam: #EDEDED;
   --greyBg: #F5F5F5;

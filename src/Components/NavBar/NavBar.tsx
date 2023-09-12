@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+
 import {GiPlanePilot} from 'react-icons/gi';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb';

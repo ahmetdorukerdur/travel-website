@@ -1,1 +1,63 @@
-/*# sourceMappingURL=subinfo.css.map */
+.subInfo {
+  padding: 2rem 0;
+  background: var(--greyBg);
+}
+.subInfo .secContainer {
+  text-align: center;
+  gap: 2rem;
+}
+.subInfo .secContainer .subInfoLogo {
+  padding-bottom: 0.5rem;
+}
+.subInfo .secContainer .subInfoLogo .logo {
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: var(--blackColor);
+  cursor: pointer;
+}
+.subInfo .secContainer .subInfoLogo .logo .icon {
+  margin-right: 0.5rem;
+  font-size: 30px;
+  color: var(--PrimaryColor);
+}
+.subInfo .secContainer .socialMedia {
+  justify-content: center;
+  margin: auto;
+  gap: 0.5rem;
+}
+.subInfo .secContainer .socialMedia .icon {
+  padding: 6px;
+  font-size: 30px;
+  background: var(--PrimaryColor);
+  border-radius: 50%;
+  color: var(--whiteColor);
+}
+.subInfo .secContainer .socialMedia .icon:hover {
+  background: var(--blackColor);
+}
+.subInfo .secContainer .subInfoLinks {
+  display: grid;
+  row-gap: 1rem;
+}
+.subInfo .secContainer .subInfoLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+.subInfo .secContainer .subInfoLinks li:hover {
+  transform: translateY(5px);
+  font-size: 17px;
+}
+.subInfo .secContainer .subInfoLinks li:hover a {
+  color: var(--PrimaryColor);
+}
+.subInfo .secContainer .subInfoLinks a {
+  font-size: 15px;
+  color: var(--textColor);
+}
+.subInfo .secContainer .subInfoLinks .phone, .subInfo .secContainer .subInfoLinks .email {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--textColor);
+}/*# sourceMappingURL=subinfo.css.map */

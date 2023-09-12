@@ -13,7 +13,6 @@
 }
 .popular .secContainer .secHeader .textDiv p {
   font-size: 13px;
-  font-weight: 500;
   color: var(--textColor);
 }
 .popular .secContainer .secHeader .iconsDiv {
@@ -72,7 +71,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.434));
 }
 .popular .secContainer .mainContent .singleDestination .destImage .overlayInfo h3 {
-  font-weight: 600;
   color: var(--whiteColor);
 }
 .popular .secContainer .mainContent .singleDestination .destImage .overlayInfo p {
@@ -105,7 +103,6 @@
   width: -moz-max-content;
   width: max-content;
   font-size: 2rem;
-  font-weight: 700;
   color: var(--blackColor);
 }
 .popular .secContainer .mainContent .singleDestination .destFooter .number::after {
@@ -129,7 +126,6 @@
   transform: translateY(5px);
   align-items: flex-start;
   font-size: 16px;
-  font-weight: 600;
 }
 .popular .secContainer .mainContent .singleDestination .destFooter .destText .flex .icon {
   color: var(--PrimaryColor);

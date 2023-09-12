@@ -5,6 +5,9 @@
   font-size: 1rem;
   color: var(--blackColor);
 }
+.about .secContainer h2 {
+  line-height: 5rem;
+}
 .about .mainContent {
   gap: 1rem;
 }
