@@ -29,7 +29,7 @@ const offer = [
     location: 'Rangali Island Alifu Dhaalu Atoll, 20077, Maldives',
     price: '$2100',
     discountRate: '%20 off',
-    bedspace: '1 bed'
+    bedspace: '4 beds'
   },
   {
     id: 3,

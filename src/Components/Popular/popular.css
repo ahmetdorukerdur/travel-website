@@ -134,4 +134,10 @@
   overflow: visible;
   padding: 1rem 1.5rem;
   height: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .popular {
+    padding-top: 100px;
+  }
 }/*# sourceMappingURL=popular.css.map */

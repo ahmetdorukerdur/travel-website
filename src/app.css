@@ -100,3 +100,11 @@ input{
   font-size: 100%;
 }
 
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+  .mainContent{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

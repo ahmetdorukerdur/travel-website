@@ -82,4 +82,29 @@
   width: 100%;
   color: var(--whiteColor);
   font-weight: 600;
+}
+
+@media screen and (min-width: 576px) {
+  .home .secContainer .homeCard {
+    bottom: -68px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(11px);
+  }
+}
+@media screen and (min-width: 576px) {
+  .home .secContainer .homeText .title {
+    font-size: 3rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .home .secContainer .homeCard {
+    bottom: -5%;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=home.css.map */
