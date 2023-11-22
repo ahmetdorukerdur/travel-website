@@ -35,7 +35,7 @@
 .home .secContainer .homeCard {
   position: absolute;
   left: 50%;
-  bottom: -35%;
+  bottom: -25%;
   transform: translate(-50%);
   justify-content: center;
   gap: 1rem;
@@ -106,5 +106,26 @@
   .home .secContainer .homeCard {
     bottom: -5%;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .home .secContainer .homeText {
+    padding: 1rem 10rem;
+  }
+  .home .secContainer .title {
+    margin: auto;
+    line-height: 4rem;
+    font-size: 4rem;
+  }
+  .home .secContainer .subTitle {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home .secContainer .homeText .subTitle {
+    font-size: 20px;
+  }
+  .home .secContainer .homeCard {
+    width: 72%;
   }
 }/*# sourceMappingURL=home.css.map */

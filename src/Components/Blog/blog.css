@@ -10,6 +10,9 @@
   height: 250px;
   border-radius: 1rem;
   box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .blog .mainContainer .singlePost .imgDiv:hover img {
   transform: scale(1.1);

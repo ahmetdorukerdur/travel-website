@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './blog.css';
 
 import {TiArrowRightOutline} from 'react-icons/ti'
@@ -7,6 +7,9 @@ import BeachBlog from '../../Images/BeachVacation.jpeg';
 import NaturalBlog from '../../Images/NaturalVacation.webp';
 import CulturalBlog from '../../Images/CulturalVacation.jpeg';
 import SkiBlog from '../../Images/SkiVacation.jpeg';
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Blogs = [
   {
@@ -36,14 +39,18 @@ const Blogs = [
 ]
 
 const Blog = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className='blog name container'>
       <div className='secContainer'>
         <div className='secIntro'>
-          <h2 className='secTitle'>
+          <h2 data-aos='fade-right' className='secTitle'>
             Our Best Blog?
           </h2>
-          <p>
+          <p data-aos='fade-left'>
             An insight to the incredible experience in the world.
           </p>
         </div>
@@ -53,11 +60,11 @@ const Blog = () => {
             Blogs.map(({id, blogImage, title, description}) => {
               return(
                 <div className='singlePost grid'>
-                  <div className='imgDiv'>
+                  <div data-aos='fade-right' className='imgDiv'>
                     <img src={blogImage} alt={title} />
                   </div>
 
-                  <div className='postDetails'>
+                  <div data-aos='fade-left' className='postDetails'>
                     <h3>
                       {title}
                     </h3>

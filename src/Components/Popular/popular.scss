@@ -1,43 +1,43 @@
-.popular{
+.popular {
   padding-top: 15rem;
 
-  .secContainer{
-    .secHeader{
+  .secContainer {
+    .secHeader {
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
 
-      .textDiv{
-        .secTitle{
-          padding-bottom: .5rem;
+      .textDiv {
+        .secTitle {
+          padding-bottom: 0.5rem;
           line-height: 1.5rem;
           color: var(--blackColor);
         }
 
-        p{
+        p {
           font-size: 13px;
           color: var(--textColor);
         }
       }
 
-      .iconsDiv{
+      .iconsDiv {
         gap: 1rem;
 
-        .icon{
-          padding: .5rem;
+        .icon {
+          padding: 0.5rem;
           background: var(--greyText);
           border-radius: 50%;
           font-size: 2.5rem;
-          &:hover{
+          &:hover {
             background: var(--blackColor);
             color: var(--whiteColor);
           }
         }
 
-        .leftIcon{
+        .leftIcon {
           background: var(--blackColor);
           color: var(--whiteColor);
-          &:hover{
+          &:hover {
             background: var(--greyText);
             color: var(--blackColor);
           }
@@ -45,27 +45,29 @@
       }
     }
 
-    .mainContent{
+    .mainContent {
       padding: 2rem 0;
       gap: 1rem;
 
-      .singleDestination{
+      user-select: none;
+
+      .singleDestination {
         overflow: hidden;
         border-radius: 1rem;
         box-shadow: 0 2px 7px 2px rgba(137, 133, 133, 0.288);
 
-        .destImage{
+        .destImage {
           overflow: hidden;
           position: relative;
           height: 200px;
           width: 100%;
-          img{
+          img {
             height: 100%;
             width: 100%;
             object-fit: cover;
           }
 
-          .overlayInfo{
+          .overlayInfo {
             overflow: hidden;
             position: absolute;
             bottom: 0;
@@ -76,29 +78,32 @@
             padding: 0;
             width: 100%;
             height: 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.434));
+            background: linear-gradient(
+              rgba(0, 0, 0, 0.621),
+              rgba(0, 0, 0, 0.434)
+            );
 
-            h3{
+            h3 {
               color: var(--whiteColor);
             }
-            p{
+            p {
               font-size: 13px;
-              opacity: .7;
+              opacity: 0.7;
               color: var(--whiteColor);
             }
-            .icon{
+            .icon {
               position: absolute;
               right: 10px;
               bottom: 10px;
-              padding: .5rem;
+              padding: 0.5rem;
               border: 1px solid transparent;
               border-radius: 50%;
               background: var(--PrimaryColor);
               font-size: 2.5rem;
               color: var(--whiteColor);
-              transition: .3s ease;
+              transition: 0.3s ease;
 
-              &:hover{
+              &:hover {
                 background: var(--blackColor);
                 border: 1px solid var(--PrimaryColor);
                 color: var(--PrimaryColor);
@@ -107,16 +112,16 @@
           }
         }
 
-        .destFooter{
+        .destFooter {
           padding: 1rem;
 
-          .number{
+          .number {
             position: relative;
             width: max-content;
             font-size: 2rem;
             color: var(--blackColor);
-            &::after{
-              content: '';
+            &::after {
+              content: "";
               position: absolute;
               top: 45%;
               right: -150%;
@@ -127,32 +132,31 @@
             }
           }
 
-          .destText{
+          .destText {
             justify-content: space-between;
 
-            h6{
+            h6 {
               font-size: 15px;
               color: var(--blackColor);
             }
 
-            .flex{
+            .flex {
               transform: translateY(5px);
               align-items: flex-start;
               font-size: 16px;
 
-              .icon{
+              .icon {
                 color: var(--PrimaryColor);
               }
             }
           }
         }
 
-        &:hover{
-          .overlayInfo{
+        &:hover {
+          .overlayInfo {
             overflow: visible;
             padding: 1rem 1.5rem;
             height: 100%;
-
           }
         }
       }
@@ -163,7 +167,60 @@
 // Media Queries
 
 @media screen and (min-width: 576px) {
-  .popular{
+  .popular {
     padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .popular {
+    .secContainer {
+      .secHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .textDiv {
+          text-align: start;
+          max-width: 70%;
+        }
+
+        .iconsDiv {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .popular {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .popular {
+    padding-top: 10rem;
+
+    .secContainer {
+      .secHeader {
+        .textDiv {
+          .secTitle {
+            font-size: 2rem;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .mainContent {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem !important;
+      }
+    }
   }
 }

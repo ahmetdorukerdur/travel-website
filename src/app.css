@@ -70,6 +70,10 @@ li{
 }
 
 .btn:hover{
+  background-color: var(--HoverColor);
+}
+
+.btn:hover a{
   color: var(--whiteColor);
 }
 
@@ -104,7 +108,49 @@ input{
 /* Media Queries */
 
 @media screen and (min-width: 576px) {
-  .mainContent{
+  .mainContent, .singlePost{
     grid-template-columns: repeat(2,1fr);
   }
+}
+
+@media screen and (min-width: 992px) {
+  .mainContent{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    width: 75% !important;
+    margin: auto !important;
+  }
+
+  .section{
+    padding: 5rem 0 3rem;
+  }
+
+  .secIntro{
+    margin: 0 auto 3rem;
+  }
+
+  .secIntro, .secTitle{
+    padding-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+
+  .secIntro p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 2120px) {
+  body{
+    zoom: 1.5;
+  }
+}
+
+::selection{
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
 }

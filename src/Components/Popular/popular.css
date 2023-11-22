@@ -39,6 +39,9 @@
 .popular .secContainer .mainContent {
   padding: 2rem 0;
   gap: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .popular .secContainer .mainContent .singleDestination {
   overflow: hidden;
@@ -139,5 +142,40 @@
 @media screen and (min-width: 576px) {
   .popular {
     padding-top: 100px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .popular .secContainer .secHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .popular .secContainer .secHeader .textDiv {
+    text-align: start;
+    max-width: 70%;
+  }
+  .popular .secContainer .secHeader .iconsDiv {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 769px) {
+  .popular {
+    padding-top: 7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .popular {
+    padding-top: 10rem;
+  }
+  .popular .secContainer .secHeader .textDiv .secTitle {
+    font-size: 2rem;
+  }
+  .popular .secContainer .secHeader .textDiv p {
+    font-size: 15px;
+  }
+  .popular .secContainer .mainContent {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem !important;
   }
 }/*# sourceMappingURL=popular.css.map */

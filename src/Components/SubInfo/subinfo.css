@@ -56,8 +56,26 @@
   font-size: 15px;
   color: var(--textColor);
 }
-.subInfo .secContainer .subInfoLinks .phone, .subInfo .secContainer .subInfoLinks .email {
+.subInfo .secContainer .subInfoLinks .phone,
+.subInfo .secContainer .subInfoLinks .email {
   font-size: 17px;
   font-weight: 500;
   color: var(--textColor);
+}
+
+/* Media Queries */
+@media screen and (min-width: 576px) {
+  .secContainer {
+    text-align: center;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContainer .linkTitle {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .secContainer {
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=subinfo.css.map */
